@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Obesidad Infantil</title>
+</head>
+
+<body>
+<audio autoplay loop muted id="musica" style="display:none;">
+    <source src="bendy.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const audio = document.getElementById("musica");
+
+    document.addEventListener("click", () => {
+        audio.play();
+    });
+</script>
+
+<!-- CABECERA -->
+<header>
+    <h1>Obesidad Infantil</h1>
+    <nav>
+        <a href="#inicio">Inicio</a> |
+        <a href="#causas">Causas</a> |
+        <a href="#prevencion">Prevención</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<hr>
+
+<!-- CONTENIDO -->
+<main>
+
+<!-- SECCIÓN INICIO -->
+<section id="inicio">
+    <h2>¿Qué es la obesidad infantil?</h2>
+    <p>
+        La obesidad infantil es un problema de salud que ocurre cuando un niño tiene exceso de grasa corporal.
+        Puede afectar su salud física y emocional.
+    </p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSby12Jw1izbapTR5lsU_M71TBQrj2Pi6AQmw&s" width="300">
+</section>
+
+<hr>
+
+<!-- SECCIÓN CAUSAS -->
+<section id="causas">
+    <h2>Causas</h2>
+
+    <ul>
+        <li>Mala alimentación</li>
+        <li>Falta de ejercicio</li>
+        <li>Uso excesivo de pantallas</li>
+    </ul>
+
+    <!-- TABLA -->
+    <table border="1">
+        <tr>
+            <td>Factor</td>
+            <td>Ejemplo</td>
+        </tr>
+        <tr>
+            <td>Alimentación</td>
+            <td>Comida chatarra</td>
+        </tr>
+        <tr>
+            <td>Actividad física</td>
+            <td>No hacer ejercicio</td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<!-- SECCIÓN PREVENCIÓN -->
+<section id="prevencion">
+    <h2>Prevención</h2>
+
+    <p>
+        Para prevenir la obesidad infantil se recomienda una alimentación balanceada y actividad física diaria.
+    </p>
+
+    <!-- VIDEO -->
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/JcETyYd-ag8" 
+title="YouTube video"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+       <p>
+        Más información en:
+        <a href="https://www.who.int/es" target="_blank">Organización Mundial de la Salud</a>
+    </p>
+</section>
+
+<hr>
+
+<!-- FORMULARIO -->
+<section id="contacto">
+    <h2>Formulario de contacto</h2>
+
+    <form action="procesar.php" method="post">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</main>
+
+<hr>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <p>Proyecto escolar - TIC</p>
+</footer>
+
+</body>
+</html>
